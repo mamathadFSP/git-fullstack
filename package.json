@@ -1,0 +1,12 @@
+{
+    "name": "github-portfolio-analyzer",
+    "version": "1.0.0",
+    "description": "GitHub Portfolio Analyzer & Enhancer MVP",
+    "scripts": {
+        "install": "cd server && npm install && cd ../client && npm install",
+        "build": "cd client && npm run build",
+        "start": "cd server && node index.js",
+        "dev:server": "cd server && npm run dev",
+        "dev:client": "cd client && npm run dev"
+    }
+}

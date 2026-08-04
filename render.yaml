@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: github-portfolio-analyzer
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: GITHUB_TOKEN
+        sync: false  # Set this manually in the Render dashboard
+      - key: NODE_ENV
+        value: production
